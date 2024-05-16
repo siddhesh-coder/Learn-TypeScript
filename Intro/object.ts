@@ -24,3 +24,17 @@ const user: userType = {
     batch: "M",
     address: "Dubai"
 }
+
+type CardNumber = {
+    cardNumber: number,
+}
+
+type CardName = {
+    cardName: string,
+}
+
+type CardDetails = CardNumber & CardName & { //here & for combining
+    cvv: number
+}
+
+export {}
